@@ -21,6 +21,7 @@ if (isDev) {
   plugins.push(new VueServerPlugin())
 }
 
+// eslint-disable-next-line prefer-const
 config = merge(baseConfig, {
   target: 'node',
   entry: path.join(__dirname, '../client/server-entry.js'),
@@ -56,7 +57,7 @@ config = merge(baseConfig, {
 
 config.resolve = {
   alias: {
-    'model': path.join(__dirname, '../client/model/server-model.js')
+    model: path.join(__dirname, '../client/model/server-model.js')
   }
 }
 

@@ -5,12 +5,12 @@
  * date: 2020-03-11
  * Copyright (C) 2020 Private
  */
-const scssLoader = ["vue-style-loader", "css-loader", "sass-loader"];
+const scssLoader = ['vue-style-loader', 'css-loader', 'sass-loader']
 const sassLoader = [
-  "vue-style-loader",
-  "css-loader",
-  "sass-loader?indentedSyntax"
-];
+  'vue-style-loader',
+  'css-loader',
+  'sass-loader?indentedSyntax'
+]
 
 module.exports = isDev => {
   return {
@@ -18,13 +18,13 @@ module.exports = isDev => {
       scss: scssLoader,
       sass: sassLoader
     },
-    preserverWhitepace: true, //控制标签内的空格
-    extractCSS: !isDev, //vue 热开发更新的功能
+    preserverWhitepace: true, // 控制标签内的空格
+    extractCSS: !isDev, // vue 热开发更新的功能
     cssModules: {
       localIdentName: isDev
-        ? "[path]-[name]-[hash:base64:5]"
-        : "[hash: base64: 5]",
+        ? '[path]-[name]-[hash:base64:5]'
+        : '[hash: base64: 5]',
       camelCase: true
     }
-  };
-};
+  }
+}

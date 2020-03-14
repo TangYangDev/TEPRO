@@ -12,7 +12,7 @@ import Home from '../views/pages/Home.vue'
 export default [
 
   {
-    //默认路由
+    // 默认路由
     path: '/',
     redirect: '/app'
   },

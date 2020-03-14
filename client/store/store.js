@@ -15,7 +15,6 @@ import actions from './actions'
 
 const isDev = process.env.NODE_ENV === 'development'
 
-
 /**
  * @type function
  * @param null
@@ -24,14 +23,14 @@ const isDev = process.env.NODE_ENV === 'development'
  */
 export default () => {
   return new Vuex.Store({
-    strict: isDev, //禁止外部修改store数据
+    strict: isDev, // 禁止外部修改store数据
     state: defaultState,
     mutations,
     getters,
     actions,
-    //加入Vuex模块配置
+    // 加入Vuex模块配置
     modules: {},
-    //加入Vuex插件
+    // 加入Vuex插件
     plugins: [
       (store) => {
 

@@ -9,14 +9,14 @@
 export default {
   realTimeUpdate: (store, currentTime) => {
     setInterval(() => {
-      const date = new Date();
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      const day = date.getDate();
-      const hour = date.getHours();
-      const minute = date.getMinutes();
-      const second = date.getSeconds() > 9 ? date.getSeconds() : `0${date.getSeconds()}`;
-      const dateTime = `${year}年${month}月${day}日 ${hour}:${minute}:${second}`;
+      const date = new Date()
+      const year = date.getFullYear()
+      const month = date.getMonth() + 1
+      const day = date.getDate()
+      const hour = date.getHours()
+      const minute = date.getMinutes()
+      const second = date.getSeconds() > 9 ? date.getSeconds() : `0${date.getSeconds()}`
+      const dateTime = `${year}年${month}月${day}日 ${hour}:${minute}:${second}`
       store.commit('updateTime', {
         currentDate: dateTime
       })

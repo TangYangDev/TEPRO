@@ -16,7 +16,7 @@ export default {
     sysPrefixName,
     sysSuffixName
   }) => {
-    state.sysPrefixName = sysPrefixName;
-    state.sysSuffixName = sysSuffixName;
+    state.sysPrefixName = sysPrefixName
+    state.sysSuffixName = sysSuffixName
   }
 }

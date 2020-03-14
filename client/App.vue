@@ -9,13 +9,13 @@
 
 <script>
 export default {
-  name: "app",
-  data() {
+  name: 'App',
+  data () {
     return {
-      msg: "Welcome to my Vue.js App"
-    };
+      msg: 'Welcome to my Vue.js App'
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">

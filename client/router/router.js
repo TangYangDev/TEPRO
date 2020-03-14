@@ -20,7 +20,7 @@ export default () => {
   return new Router({
     routes,
     mode: 'history',
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition
       } else {

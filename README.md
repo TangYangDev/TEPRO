@@ -40,6 +40,11 @@ npm install memory-fs -D
 
 # 安装ejs
 npm install ejs -S
+
+# 安装eslint
+npm install eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node -D
+npm install eslint-plugin-html -D
+npm install eslint-loader babel-eslint -D
 //=======================================
 ```
 
